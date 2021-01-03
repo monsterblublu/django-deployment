@@ -1,0 +1,12 @@
+{% extends 'basic_app/base.html' %}
+
+{% block content %}
+  <h1>WELCOME TO INDEX.HTML</h1>
+  <h1>{{text|cut:'h'}}</h1>
+  <h1>{{number|add:'100'}}</h1>
+
+
+  <h2>Go to <a href="{% url 'other' %}">other</a></h2>
+  <h2>Go to <a href="{% url 'relative' %}">relative</a></h2>
+
+{% endblock%}
